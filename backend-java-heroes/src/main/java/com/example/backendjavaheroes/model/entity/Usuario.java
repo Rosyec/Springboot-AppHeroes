@@ -17,6 +17,12 @@ public class Usuario {
     public Usuario() {
     }
 
+    public Usuario(String id, String email, String usuario) {
+        this.id = id;
+        this.email = email;
+        this.usuario = usuario;
+    }
+
     public String getId() {
         return id;
     }

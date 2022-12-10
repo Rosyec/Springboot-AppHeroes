@@ -24,7 +24,7 @@ public class UsuarioServiceImpl implements IUsuarioService{
     @Override
     @Transactional(readOnly = true)
     public Usuario findUsuarioByEmail(Usuario usuario) {
-        return this.usuarioDao.findByEmail( usuario.getEmail() ).orElse( new Usuario() );
+        return this.usuarioDao.findByEmail( usuario.getEmail() ).orElse( new Usuario("", "", "") );
     }
 
     @Override
